@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "166666658727",
+    "firebase_url": "https://arduino-5aec2.firebaseio.com",
+    "project_id": "arduino-5aec2",
+    "storage_bucket": "arduino-5aec2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166666658727:android:345a70cb83e88e3e",
+        "android_client_info": {
+          "package_name": "com.example.aquatech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166666658727-rdtpd47lee78q53s7f448i1auff6vr12.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aquatech",
+            "certificate_hash": "42fcde70f805ecad26b426c4b896f6503e0851e5"
+          }
+        },
+        {
+          "client_id": "166666658727-dir6btouf1kitfitskn6u8i087kin14j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCC-CNPvJ249G8Ug0LUjG-NZJH7SVWAgE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166666658727-dir6btouf1kitfitskn6u8i087kin14j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
