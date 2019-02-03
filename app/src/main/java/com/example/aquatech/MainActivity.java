@@ -18,11 +18,12 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 public class MainActivity extends AppCompatActivity {
 
     TextView a,v;
-    EditText name;
+    TextView name;
+    int x=0;
+    int max=0;
 
     DatabaseReference databaseReference;
     @Override
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         a = (TextView) findViewById(R.id.a);
         v = (TextView) findViewById(R.id.v);
+        name = (TextView) findViewById(R.id.name);
         databaseReference = FirebaseDatabase.getInstance().getReference();
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -39,6 +41,23 @@ public class MainActivity extends AppCompatActivity {
                 a.setText(s);
                 String d = dataSnapshot.child("voltage").getValue().toString();
                 v.setText(d);
+                int m =  Integer.valueOf(s);
+                if(max < m) {
+                    max = m;
+                }
+               ++x;
+               if(x>5) {
+
+                   if (max >= 600 && max <= 800) {
+                       name.setText("Potable");
+                   }
+                   else if(max>800 && max<2000 || max <600 && max>200 ){
+                       name.setText("Not Potable");
+                   }
+                   Toast.makeText(MainActivity.this , max+ " ",Toast.LENGTH_LONG).show();
+                   x=0;
+                   max=0;
+                   }
             }
 
             @Override

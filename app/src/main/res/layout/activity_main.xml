@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00fff5"
     tools:context=".MainActivity" >
 
     <TextView
@@ -21,7 +22,13 @@
         app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218" />
+        app:layout_constraintVertical_bias="0.218"
+        android:textColor="#513a97"
+        android:fontFamily="sans-serif-black"
+        android:textSize="15dp"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textStyle="bold"
+        />
 
     <TextView
         android:id="@+id/textView4"
@@ -38,7 +45,13 @@
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintVertical_bias="0.412"
+        android:textColor="#513a97"
+        android:fontFamily="sans-serif-black"
+        android:textSize="15dp"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textStyle="bold"
+        />
 
     <TextView
         android:id="@+id/a"
@@ -55,7 +68,10 @@
         app:layout_constraintHorizontal_bias="0.613"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.197" />
+        app:layout_constraintVertical_bias="0.197"
+        android:textColor="#5f3a97"
+        android:fontFamily="serif-monospace"
+        android:textStyle="normal"/>
 
     <TextView
         android:id="@+id/v"
@@ -70,7 +86,28 @@
         app:layout_constraintHorizontal_bias="0.289"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.392" />
+        app:layout_constraintVertical_bias="0.392"
+        android:textColor="#5f3a97"
+        android:fontFamily="serif-monospace"
+        android:textStyle="normal"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="269dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="wait"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
 
 
 </android.support.constraint.ConstraintLayout>
